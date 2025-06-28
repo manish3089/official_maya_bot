@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "official-maya-bot"
+version = "0.1.0"
+description = "A Telegram bot that sends daily love notes 💖"
+authors = ["Manish Chaudhary <your@email.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.10.13"
+python-telegram-bot = "^20.7"
+pytz = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
