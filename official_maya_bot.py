@@ -9,7 +9,7 @@ import pytz
 logging.basicConfig(level=logging.INFO)
 
 BOT_TOKEN = "8195136794:AAEG1ZRl-JS7p6cFCh87ng_OI31YOAWlAtE"
-GIRLFRIEND_CHAT_ID = '123456789'  # Set this in Render
+GIRLFRIEND_CHAT_ID = '7719180775'  # Set this in Render
 
 compliments = [
     "You're my sunshine on cloudy days ☀️",
@@ -35,7 +35,14 @@ async def daily_message(context: ContextTypes.DEFAULT_TYPE):
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
     logging.info(f"User started the bot. Chat ID: {chat_id}")
-    await update.message.reply_text("Hey love! I’m your daily love bot 💖")
+    birthday_message = (
+        "🎉 Happy Birthday, my love! 🎂\n\n"
+        "This little bot is my surprise gift to you — it'll send you love, smiles, and memories every single day 💖\n\n"
+        "You mean the world to me, and I wanted something special that lasts beyond just today.\n\n"
+        "Let's begin your daily love letters ❤️"
+    )
+    
+    await update.message.reply_text(birthday_message)
 
 if __name__ == '__main__':
     app = ApplicationBuilder().token(BOT_TOKEN).build()
