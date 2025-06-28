@@ -8,7 +8,7 @@ import pytz
 
 logging.basicConfig(level=logging.INFO)
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("8195136794:AAEG1ZRl-JS7p6cFCh87ng_OI31YOAWlAtE")
 GIRLFRIEND_CHAT_ID = os.getenv("GIRLFRIEND_CHAT_ID")  # Set this in Render
 
 compliments = [
